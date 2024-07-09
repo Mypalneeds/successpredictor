@@ -125,17 +125,17 @@ function restartQuiz() {
 }
 
 function shareOnTwitter() {
-    const url = `https://twitter.com/intent/tweet?text=I scored ${score}/200 on the Success Predictor! Find out your score:`;
+    const url = `https://twitter.com/intent/tweet?text=I scored ${score}/200 on the Success Predictor! Find out your score:https://successpredictor.vercel.app/`;
     window.open(url, '_blank');
 }
 
 function shareOnFacebook() {
-    const url = `https://www.facebook.com/sharer/sharer.php?u=https://example.com`;
+    const url = `https://www.facebook.com/sharer/sharer.php?u=https://successpredictor.vercel.app/`;
     window.open(url, '_blank');
 }
 
 function shareOnWhatsApp() {
-    const url = `https://api.whatsapp.com/send?text=I scored ${score}/200 on the Success Predictor! Find out your score: https://example.com`;
+    const url = `https://api.whatsapp.com/send?text=I scored ${score}/200 on the Success Predictor! Find out your score: https://successpredictor.vercel.app/`;
     window.open(url, '_blank');
 }
 
