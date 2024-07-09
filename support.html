@@ -1,4 +1,16 @@
+<script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
 
+        // Prevent keyboard shortcuts (Ctrl+U, Ctrl+S)
+        document.onkeydown = function(e) {
+            if ((e.ctrlKey && e.keyCode === 85) || (e.ctrlKey && e.keyCode === 83)) {
+                e.preventDefault();
+            }
+        };
+    </script>
 <head>
      <link rel="icon" type="image/x-icon" href="success.ico">
     <meta name="title" content="Success Predictor - Assess Your Future Success">
