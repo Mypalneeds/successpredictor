@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Predictor - Predict your Success Rate with your current lifestyle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="homePage" class="container">
+        <h1>Welcome to the Success Predictor</h1>
+        <button onclick="startQuiz()">Start Quiz</button>
+
+           <p style="font-weight: bold;" >About the Success Predictor Web App:</p><br>
+    The Success Predictor web app evaluates your potential success over the next five years through a dynamic quiz. It provides a personalized success score, visual feedback via charts, and links to educational resources.
+    
+    Designed and Developed by Mmadubuko Micheal
+       
+    </div>
+    <div id="quizPage" class="container" style="display: none;">
+        <h1>Quiz</h1>
+        <form id="quizForm"></form>
+        <button type="button" onclick="submitQuiz()">Next</button>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar" role="progressbar"></div>
+        </div>
+    </div>
+    
+    <div id="resultsPage" class="container" style="display: none;">
+        <h1>Your Results</h1>
+        <p id="resultText" class="result"></p>
+        <canvas id="resultChart"></canvas>
+        <div id="educationalResources"></div>
+        <button type="button" onclick="restartQuiz()">Restart</button>
+        <div class="share-buttons">
+            <button type="button" onclick="shareOnTwitter()">Share on Twitter</button>
+            <button type="button" onclick="shareOnFacebook()">Share on Facebook</button>
+            <button type="button" onclick="shareOnWhatsApp()">Share on WhatsApp</button>
+        </div>
+        <a href="#supportPage" class="support-link">Support Us</a>
+    </div>
+    <div id="supportPage" class="container" style="display: none;">
+        <h1>Support Us</h1>
+        <p>Thank you for using the Success Predictor! If you would like to support us, you can donate using the details below:</p>
+        <h3>Crypto (BTC):</h3>
+        <p>bc1qdd8x8vfva43hsaafjvp97rl4e7utu8fqx8ypvf</p>
+        <h3>Bank Details:</h3>
+        <p>Kuda Microfinance Bank</p>
+        <p>Account Number: 1100363680</p>
+        <p>Account Name: Micheal Mmadubuko</p>
+        <button type="button" onclick="backToHome()">Back to Home</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

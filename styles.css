@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h3 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.progress {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+/* Quiz Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.result {
+    text-align: center;
+    margin: 20px 0;
+}
+
+canvas {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#educationalResources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#educationalResources li {
+    margin: 10px 0;
+}
+
+#educationalResources a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#educationalResources a:hover {
+    text-decoration: underline;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.share-buttons button {
+    width: auto;
+    padding: 10px 20px;
+}
+
+/* Support Page */
+.support-link {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.support-link:hover {
+    text-decoration: underline;
+}
